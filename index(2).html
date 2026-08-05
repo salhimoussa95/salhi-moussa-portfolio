@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salhi Moussa | Arabic LQA Specialist</title>
+
+    <!-- AOS Library for Scroll Reveal -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Vanilla Tilt Library for 3D Hover Effect (loaded directly) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" defer></script>
+
+    <style>
+        /* ---------- Reset ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #0b0b0f;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 25px;
+        }
+
+        /* ---------- Hero ---------- */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .hero h2 {
+            color: #4ea1ff;
+        }
+        .hero p {
+            color: #cccccc;
+            font-size: 18px;
+        }
+        .hero img {
+            border-radius: 50%;
+            border: 5px solid #4ea1ff;
+            box-shadow: 0 0 30px rgba(78, 161, 255, 0.35);
+        }
+
+        h2 {
+            color: #4ea1ff;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        /* ---------- Cards ---------- */
+        .card {
+            background: #15151c;
+            padding: 25px;
+            border-radius: 16px;
+            margin-top: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .tag {
+            display: inline-block;
+            background: #222;
+            color: #4ea1ff;
+            padding: 12px 18px;
+            border-radius: 25px;
+            margin: 8px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        a {
+            color: #4ea1ff;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background: #4ea1ff;
+            color: black;
+            padding: 14px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin: 10px;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+        }
+
+        /* ---------- Games Grid ---------- */
+        .games {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+            margin-top: 10px;
+        }
+
+        /* ---------- 3D Card ---------- */
+        .game {
+            background: #14181f;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transform-style: preserve-3d;
+            will-change: transform;
+            text-align: left;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .game img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            border-bottom: 3px solid #4ea1ff;
+            transition: transform 0.4s ease;
+        }
+
+        .game:hover img {
+            transform: scale(1.02);
+        }
+
+        .game-content {
+            padding: 18px 20px 20px 20px;
+            background: #14181f;
+        }
+
+        .game h3 {
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 6px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .game p {
+            color: #aab;
+            font-size: 14px;
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        /* ---------- Mobile Responsive ---------- */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            .hero h1 {
+                font-size: 34px;
+            }
+            .hero h2 {
+                font-size: 22px;
+            }
+            .button {
+                display: block;
+                width: 220px;
+                margin: 15px auto;
+                text-align: center;
+            }
+            .games {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            .game img {
+                height: 160px;
+            }
+            h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container hero">
+        <img src="profile.jpg" alt="Salhi Moussa Profile" style="width:180px; height:180px; object-fit:cover;" />
+        <h1>Salhi Moussa</h1>
+        <h2>Arabic Localization QA Specialist</h2>
+        <p>🎮 AAA Games • Arabic LQA • Linguistic QA • RTL Testing</p>
+        <a class="button" href="Salhi_Moussa_CV.pdf">Download CV</a>
+        <a class="button" href="https://www.linkedin.com/in/salhi-moussa-lqa95" target="_blank">LinkedIn</a>
+    </div>
+
+    <div class="container">
+
+        <h2 data-aos="fade-up">👨 About Me</h2>
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="games">
+                <div class="game" data-aos="zoom-in" data-aos-delay="50"><h1>4+</h1><p>Years Exp.</p></div>
+                <div class="game" data-aos="zoom-in" data-aos-delay="100"><h1>10+</h1><p>Games</p></div>
+                <div class="game" data-aos="zoom-in" data-aos-delay="150"><h1>4</h1><p>Companies</p></div>
+                <div class="game" data-aos="zoom-in" data-aos-delay="200"><h1>3</h1><p>Countries</p></div>
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <ul>
+                <li>🎮 4+ Years in Game Localization QA</li>
+                <li>🏢 4 International Companies</li>
+                <li>🌍 Worked in Japan, Ireland and Romania</li>
+                <li>📱 AAA & Live-Service Games</li>
+                <li>🌐 Arabic • English • Italian</li>
+            </ul>
+        </div>
+
+        <h2 data-aos="fade-up">💼 Professional Experience</h2>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <img src="keywords_logo.png" alt="Keywords Studios" style="height:50px; margin-bottom:15px;" />
+            <h3>Keywords Studios</h3>
+            <p><strong>Tokyo, Japan</strong></p>
+            <p>Arabic Localization QA Specialist</p>
+            <ul>
+                <li>Arabic Linguistic QA</li>
+                <li>RTL Validation</li>
+                <li>Regression Testing</li>
+                <li>Jira Bug Reporting</li>
+                <li>Supercell Projects</li>
+            </ul>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="150">
+            <img src="Ubisoft_logo.jpg" alt="Ubisoft" style="height:50px; margin-bottom:15px;" />
+            <h3>Ubisoft</h3>
+            <p><strong>Bucharest, Romania</strong></p>
+            <p>Arabic Localization QA Tester</p>
+            <ul>
+                <li>Avatar: Frontiers of Pandora</li>
+                <li>Arabic linguistic and cultural validation</li>
+                <li>UI, dialogue and asset testing</li>
+            </ul>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <img src="keywords_logo.png" alt="Keywords Studios" style="height:50px; margin-bottom:15px;" />
+            <h3>Keywords Studios</h3>
+            <p><strong>Dublin, Ireland</strong></p>
+            <p>Arabic LQA Tester</p>
+            <ul>
+                <li>AAA game localization testing</li>
+                <li>Redfall</li>
+                <li>Deathloop</li>
+                <li>Functional and regression testing</li>
+            </ul>
+        </div>
+
+        <h2 data-aos="fade-up">🎮 Featured Projects</h2>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="50">
+            <div class="games">
+                <!-- Each card gets the tilt effect automatically via JS below -->
+                <div class="game" data-aos="flip-up" data-aos-delay="50">
+                    <img src="Avatar_cover.webp" alt="Avatar Cover" />
+                    <div class="game-content">
+                        <h3>Avatar: Frontiers</h3>
+                        <p>Ubisoft — Arabic LQA</p>
+                    </div>
+                </div>
+
+                <div class="game" data-aos="flip-up" data-aos-delay="100">
+                    <img src="Redfall_cover.webp" alt="Redfall Cover" />
+                    <div class="game-content">
+                        <h3>Redfall</h3>
+                        <p>Bethesda — Arabic LQA</p>
+                    </div>
+                </div>
+
+                <div class="game" data-aos="flip-up" data-aos-delay="150">
+                    <img src="deathloop_cover.jpg" alt="Deathloop Cover" />
+                    <div class="game-content">
+                        <h3>Deathloop</h3>
+                        <p>Bethesda — Arabic LQA</p>
+                    </div>
+                </div>
+
+                <div class="game" data-aos="flip-up" data-aos-delay="50">
+                    <img src="clashroyale_cover.jpg" alt="Clash Royale" />
+                    <div class="game-content">
+                        <h3>Clash Royale</h3>
+                        <p>Supercell — Arabic LQA</p>
+                    </div>
+                </div>
+
+                <div class="game" data-aos="flip-up" data-aos-delay="100">
+                    <img src="clashofclans_cover.jpg" alt="Clash of Clans" />
+                    <div class="game-content">
+                        <h3>Clash of Clans</h3>
+                        <p>Supercell — Arabic LQA</p>
+                    </div>
+                </div>
+
+                <div class="game" data-aos="flip-up" data-aos-delay="150">
+                    <img src="brawlstars_cover.jpg" alt="Brawl Stars" />
+                    <div class="game-content">
+                        <h3>Brawl Stars</h3>
+                        <p>Supercell — Arabic LQA</p>
+                    </div>
+                </div>
+
+                <div class="game" data-aos="flip-up" data-aos-delay="200">
+                    <img src="boombeach_cover.jpg" alt="Boom Beach" />
+                    <div class="game-content">
+                        <h3>Boom Beach</h3>
+                        <p>Supercell — Arabic LQA</p>
+                    </div>
+                </div>
+
+                <div class="game" data-aos="flip-up" data-aos-delay="250">
+                    <img src="moco_cover.jpg" alt="MO.CO" />
+                    <div class="game-content">
+                        <h3>MO.CO</h3>
+                        <p>Supercell — Arabic LQA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 data-aos="fade-up">🏆 Official Game Credits</h2>
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <h3>🎮 Avatar: Frontiers of Pandora</h3>
+            <p>Ubisoft — Arabic Localization QA</p>
+            <img src="avatar-credits.png" alt="Avatar Credits" style="width:70%; max-width:700px; display:block; margin:auto; border-radius:10px; margin-top:15px;" />
+            <br />
+            <h3>🎮 Redfall</h3>
+            <p>Bethesda — Arabic Localization QA</p>
+            <img src="redfall-credits.png" alt="Redfall Credits" style="width:70%; max-width:700px; display:block; margin:auto; border-radius:10px; margin-top:15px;" />
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="50">
+            <span class="tag">Localization QA</span>
+            <span class="tag">Linguistic QA</span>
+            <span class="tag">RTL Testing</span>
+            <span class="tag">Functional Testing</span>
+            <span class="tag">Regression Testing</span>
+            <span class="tag">Bug Reporting</span>
+            <span class="tag">Jira</span>
+            <span class="tag">Redmine</span>
+            <span class="tag">MemoQ</span>
+        </div>
+
+        <h2 data-aos="fade-up">🌍 Languages</h2>
+        <div class="card" data-aos="fade-up" data-aos-delay="50">
+            <ul>
+                <li>🇩🇿 Arabic — Native</li>
+                <li>🇬🇧 English — Professional</li>
+                <li>🇮🇹 Italian — Professional</li>
+                <li>🇫🇷 French — Intermediate</li>
+            </ul>
+        </div>
+
+        <h2 data-aos="fade-up">Links</h2>
+        <div class="card" data-aos="fade-up" data-aos-delay="50">
+            <a class="button" href="https://www.linkedin.com/in/salhi-moussa-lqa95" target="_blank">View LinkedIn</a>
+            <a class="button" href="Salhi_Moussa_CV.pdf">Download CV</a>
+        </div>
+
+        <footer>
+            ----------------------------------------
+            Salhi Moussa<br />
+            Arabic Localization QA Specialist<br />
+            📧 salhimoussa1995@gmail.com<br />
+            © 2026
+            ----------------------------------------
+        </footer>
+    </div>
+
+    <!-- AOS Init -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+
+        // ===== ACTIVATE 3D TILT FOR ALL .game CARDS (Guaranteed to work) =====
+        // We wait for the page to load completely, then apply the effect.
+        window.addEventListener('load', function() {
+            if (typeof VanillaTilt !== 'undefined') {
+                VanillaTilt.init(document.querySelectorAll('.game'), {
+                    max: 15,
+                    speed: 400,
+                    glare: true,
+                    'max-glare': 0.4,
+                    gyroscope: true,
+                });
+                console.log('🔥 3D Tilt Activated Successfully!');
+            } else {
+                console.warn('VanillaTilt library not loaded.');
+            }
+        });
+    </script>
+
+</body>
+</html>
